@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hompage of Mariana Assmann</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+
+  <ul class="navigation">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About Me</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  
+
+  <section id="home">
+    <div class="container background-img">
+      <h1 class="white-font">Hello, I am Mariana</h1>
+      <h3 class="white-font">I am a computational chemist and learning to become a web developer</h3>
+    </div>
+  </section>
+
+  <div class="container spacing">
+  </div>
+
+  <section id="about">
+    <div class="container yellow">
+    <h1>About me</h1>
+    <p>When I am not learning to code, I like to do cycling tours, and enjoy going to concerts. I recently started doing pottery, where I am currently learning different techniques. Additionally, I like to travel and take a lot of pictures while doing that. Here are some of the places I have been to: </p>
+    </div>
+    <div class="container pic-container yellow">
+      <img src="img/Amsterdam_900px.JPG" id="amsterdam" class="expand-img" alt="Amsterdam, Netherlands">
+      <!-- The Modal -->
+        <div id="myModal01" class="modal">
+          <span class="close">&times;</span>
+          <img class="container modal-content" id="imag01">
+          <div class="caption" id="caption01"></div>
+        </div>
+        <script>
+        // Get the modal
+        var modal01 = document.getElementById('myModal01');
+        // Get the image for the modal, add its alt as caption
+        var img01 = document.getElementsByClassName('expand-img')[0];
+        var modalImg01 = document.getElementById("imag01");
+        var captionText01 = document.getElementById("caption01");
+        // On click on image, show modal
+        img01.onclick = function(){
+          modal01.style.display = "block";
+          modalImg01.src = this.src;
+          captionText01.innerHTML = this.alt;
+        }
+        // Get the span
+        var span01 = document.getElementsByClassName("close")[0];
+        // Close model by click on span
+        span01.onclick = function() { 
+         modal01.style.display = "none";
+        }
+      </script>
+
+      <img src="img/Keukenhof_900px.JPG" class="expand-img" alt="Keukenhof, Netherlands">
+        <div id="myModal02" class="modal">
+          <span class="close">&times;</span>
+          <img class="modal-content" id="imag02">
+          <div class="caption" id="caption02"></div>
+        </div>
+        <script type="text/javascript">
+          var modal02 = document.getElementById('myModal02');
+          var img02 = document.getElementsByClassName('expand-img')[1];
+          var modalImg02 = document.getElementById('imag02');
+          var captionText02 = document.getElementById("caption02");
+          
+          img02.onclick = function(){
+            modal02.style.display = "block";
+            modalImg02.src = this.src;
+            captionText02.innerHTML = this.alt;
+          }
+
+          var span02 = document.getElementsByClassName("close")[1];
+
+          span02.onclick = function() { 
+            modal02.style.display = "none";
+          }
+        </script>
+      <img src="img/Tromso_900px.JPG" class="expand-img" alt="Sommar&oslashy, Norway">
+        <div id="myModal03" class="modal">
+          <span class="close">&times;</span>
+          <img class="modal-content" id="imag03">
+          <div class="caption" id="caption03"></div>
+        </div>
+        <script type="text/javascript">
+          var modal03 = document.getElementById('myModal03');
+          var img03 = document.getElementsByClassName('expand-img')[2];
+          var modalImg03 = document.getElementById('imag03');
+          var captionText03 = document.getElementById("caption03");
+          
+          img03.onclick = function(){
+            modal03.style.display = "block";
+            modalImg03.src = this.src;
+            captionText03.innerHTML = this.alt;
+          }
+
+          var span03 = document.getElementsByClassName("close")[2];
+
+          span03.onclick = function() { 
+            modal03.style.display = "none";
+          }
+        </script>
+      <img src="img/Toledo_900px.JPG" class="expand-img" alt="Toledo, Spain">
+        <div id="myModal04" class="modal">
+          <span class="close">&times;</span>
+          <img class="modal-content" id="imag04">
+          <div class="caption" id="caption04"></div>
+        </div>
+        <script type="text/javascript">
+          var modal04 = document.getElementById('myModal04');
+          var img04 = document.getElementsByClassName('expand-img')[3];
+          var modalImg04 = document.getElementById('imag04');
+          var captionText04 = document.getElementById("caption04");
+        
+          img04.onclick = function(){
+            modal04.style.display = "block";
+            modalImg04.src = this.src;
+            captionText04.innerHTML = this.alt;
+          }
+
+          var span04 = document.getElementsByClassName("close")[3];
+
+          span04.onclick = function() { 
+            modal04.style.display = "none";
+          }
+        </script>
+      <img src="img/Tarragona_900px.JPG" class="expand-img" alt="Tarragona, Spain">
+        <div id="myModal05" class="modal">
+          <span class="close">&times;</span>
+          <img class="modal-content" id="imag05">
+          <div class="caption" id="caption05"></div>
+        </div>
+        <script type="text/javascript">
+          var modal05 = document.getElementById('myModal05');
+          var img05 = document.getElementsByClassName('expand-img')[4];
+          var modalImg05 = document.getElementById('imag05');
+          var captionText05 = document.getElementById("caption05");
+          
+          img05.onclick = function(){
+            modal05.style.display = "block";
+            modalImg05.src = this.src;
+            captionText05.innerHTML = this.alt;
+          }
+
+          var span05 = document.getElementsByClassName("close")[4];
+
+          span05.onclick = function() { 
+            modal05.style.display = "none";
+          }
+        </script>
+      <img src="img/Strassburg_900px.JPG" class="expand-img" alt="Strasbourg, France">
+        <div id="myModal06" class="modal">
+          <span class="close">&times;</span>
+          <img class="modal-content" id="imag06">
+          <div class="caption" id="caption06"></div>
+        </div>
+        <script type="text/javascript">
+          var modal06 = document.getElementById('myModal06');
+          var img06 = document.getElementsByClassName('expand-img')[5];
+          var modalImg06 = document.getElementById('imag06');
+          var captionText06 = document.getElementById("caption06");
+          
+          img06.onclick = function(){
+            modal06.style.display = "block";
+            modalImg06.src = this.src;
+            captionText06.innerHTML = this.alt;
+          }
+
+          var span06 = document.getElementsByClassName("close")[5];
+
+          span06.onclick = function() { 
+            modal06.style.display = "none";
+          }
+        </script>
+      <img src="img/Teotihuacan_900px.JPG" class="expand-img" alt="Teotihuac&aacuten, Mexico">
+        <div id="myModal07" class="modal">
+          <span class="close">&times;</span>
+          <img class="modal-content" id="imag07">
+          <div class="caption" id="caption07"></div>
+        </div>
+        <script type="text/javascript">
+          var modal07 = document.getElementById('myModal07');
+          var img07 = document.getElementsByClassName('expand-img')[6];
+          var modalImg07 = document.getElementById('imag07');
+          var captionText07 = document.getElementById("caption07");
+          
+          img07.onclick = function(){
+            modal07.style.display = "block";
+            modalImg07.src = this.src;
+            captionText07.innerHTML = this.alt;
+          }
+
+          var span07 = document.getElementsByClassName("close")[6];
+
+          span07.onclick = function() { 
+            modal07.style.display = "none";
+          }
+        </script>
+      <img src="img/SanFran_900px.JPG" class="expand-img" alt="San Francisco, USA">
+        <div id="myModal08" class="modal">
+          <span class="close">&times;</span>
+          <img class="modal-content" id="imag08">
+          <div class="caption" id="caption08"></div>
+        </div>
+        <script type="text/javascript">
+          var modal08 = document.getElementById('myModal08');
+          var img08 = document.getElementsByClassName('expand-img')[7];
+          var modalImg08 = document.getElementById('imag08');
+          var captionText08 = document.getElementById("caption08");
+          
+          img08.onclick = function(){
+            modal08.style.display = "block";
+            modalImg08.src = this.src;
+            captionText08.innerHTML = this.alt;
+          }
+
+          var span08 = document.getElementsByClassName("close")[7];
+
+          span08.onclick = function() { 
+            modal08.style.display = "none";
+          }
+        </script>
+      <img src="img/Lorelei_900px.JPG" class="expand-img" alt="Lorelei, Germany">
+        <div id="myModal09" class="modal">
+          <span class="close">&times;</span>
+          <img class="modal-content" id="imag09">
+          <div class="caption" id="caption09"></div>
+        </div>
+        <script type="text/javascript">
+          var modal09 = document.getElementById('myModal09');
+          var img09 = document.getElementsByClassName('expand-img')[8];
+          var modalImg09 = document.getElementById('imag09');
+          var captionText09 = document.getElementById("caption09");
+          
+          img09.onclick = function(){
+            modal09.style.display = "block";
+            modalImg09.src = this.src;
+            captionText09.innerHTML = this.alt;
+          }
+
+          var span09 = document.getElementsByClassName("close")[8];
+
+          span09.onclick = function() { 
+            modal09.style.display = "none";
+          }
+        </script>
+      <img src="img/London_900px.JPG" class="expand-img" alt="London, UK">
+        <div id="myModal10" class="modal">
+          <span class="close">&times;</span>
+          <img class="modal-content" id="imag10">
+          <div class="caption" id="caption10"></div>
+        </div>
+        <script type="text/javascript">
+          var modal10 = document.getElementById('myModal10');
+          var img10 = document.getElementsByClassName('expand-img')[9];
+          var modalImg10 = document.getElementById('imag10');
+          var captionText10 = document.getElementById("caption10");
+          
+          img10.onclick = function(){
+            modal10.style.display = "block";
+            modalImg10.src = this.src;
+            captionText10.innerHTML = this.alt;
+          }
+
+          var span10 = document.getElementsByClassName("close")[9];
+
+          span10.onclick = function() { 
+            modal10.style.display = "none";
+          }
+        </script>
+      <img src="img/Kew1_900px.JPG" class="expand-img" alt="Kew Gardens, UK">
+        <div id="myModal11" class="modal">
+          <span class="close">&times;</span>
+          <img class="modal-content" id="imag11">
+          <div class="caption" id="caption11"></div>
+        </div>
+        <script type="text/javascript">
+          var modal11 = document.getElementById('myModal11');
+          var img11 = document.getElementsByClassName('expand-img')[10];
+          var modalImg11 = document.getElementById('imag11');
+          var captionText11 = document.getElementById("caption11");
+          
+          img11.onclick = function(){
+            modal11.style.display = "block";
+            modalImg11.src = this.src;
+            captionText11.innerHTML = this.alt;
+          }
+
+          var span11 = document.getElementsByClassName("close")[10];
+
+          span11.onclick = function() { 
+            modal11.style.display = "none";
+          }
+        </script>
+      <img src="img/Kew2_900px.JPG" class="expand-img" alt="Kew Gardens, UK">
+        <div id="myModal12" class="modal">
+          <span class="close">&times;</span>
+          <img class="modal-content" id="imag12">
+          <div class="caption" id="caption12"></div>
+        </div>
+        <script type="text/javascript">
+          var modal12 = document.getElementById('myModal12');
+          var img12 = document.getElementsByClassName('expand-img')[11];
+          var modalImg12 = document.getElementById('imag12');
+          var captionText12 = document.getElementById("caption12");
+          
+          img12.onclick = function(){
+            modal12.style.display = "block";
+            modalImg12.src = this.src;
+            captionText12.innerHTML = this.alt;
+          }
+
+          var span12 = document.getElementsByClassName("close")[11];
+
+          span12.onclick = function() { 
+            modal12.style.display = "none";
+          }
+        </script>
+    </div>
+  </section>
+  
+  <div class="container spacing">
+  </div>
+
+  <section id="contact">
+    <div class="container yellow">
+      <h1>Contact</h1>
+      <ul>
+        <li>
+          <a target="_blank" href="https://github.com/c4asma/c4asma.github.io"><img class="img-link2" src="img/GitHub-Mark-64px.png" alt="GitHub Mark"></a>
+        </li>
+        <li>
+          <a target="_blank" href="https://www.freecodecamp.org/c4asma"><img class="img-link2" src="img/FreeCodeCamp_logo_small.png" alt="FreeCodeCamp Logo"></a>
+        </li>
+        <li>
+          <a target="_blank" href="https://www.codewars.com/users/c4asma"><img 
+          src="img/codewars.png" class="img-link2"
+          /*src="https://www.codewars.com/users/c4asma/badges/micro" */
+          alt="Codewars badge"></a>
+        </li>
+        <li>
+          <a target="blank" href="mailto:mariana.assmann@gmx.de"><img class="img-link2" src="img/email.png"> </a>
+        </li>
+      </ul> 
+    </div>
+  </section>
+
+</body>
+</html>

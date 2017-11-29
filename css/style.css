@@ -1,0 +1,191 @@
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: arial;
+}
+
+body{
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1{
+  padding: 0.5em;
+}
+
+p{
+  padding: 0.5em;
+}
+
+.white-font{
+  color: white;
+}
+
+
+/* Navigation */
+
+.navigation {
+  display: flex; 
+  max-width: 900px;
+  width: 100vw;
+  list-style: none;
+  margin: 0; 
+  background: #F8C005;
+  flex-flow: row wrap;
+  justify-content: center;
+  position: fixed;
+  top: 0px;
+}
+
+.navigation a {
+  text-decoration: none;
+  display: block;
+  padding: 1em;
+  color: black;
+  font-weight: bold;
+}
+
+.yellow, .navigation a:hover{
+  background: #FADC78;
+}
+
+
+/* Flexboxes */
+
+.container{
+  max-width: 900px;
+  width: 100vw;
+  display: flex;
+  list-style: none;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.pic-container{
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-content: space-around;
+}
+
+.spacing{
+  height: 10px;
+}
+
+.background-img{
+  background: url("../img/reno.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  height: 300px
+  width: 100%;
+  text-align: center;
+}
+
+.container ul{
+  display: flex;
+  justify-content: center;
+}
+
+.container ul li{
+  display: flex;
+  justify-content: space-between;
+  text-decoration: none;
+  padding: 10px;
+  margin: 5px 5px 5px 5px;
+  text-align: center;
+  align-items: center;
+}
+
+/* Images */
+
+.img-link2{
+  width: 55px;
+}
+
+.expand-img{
+  min-width: 200px;
+  width: 30%;
+  padding: 5px;
+  padding-bottom: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.expand-img:hover {opacity: 0.7;}
+
+/* Modal */
+
+.modal {
+  display: none; 
+  position: fixed; 
+  z-index: 1; /* Sit on top */
+  padding-top: 7%; 
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto; /* Scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+
+}
+
+/* Modal Content (image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 100vw;
+  max-width: 850px;
+}
+
+/* Caption of Modal Image */
+.caption {
+  margin: auto;
+  display: block;
+  color: #dddddd;
+  width: 80%;
+  max-width: 850px;
+  text-align: center;
+  padding: 10px 0;
+  font-size: 25px;   
+  height: 100px;
+}
+.modal-content, .caption {    
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
